@@ -26,3 +26,18 @@ export var serviceAccountKey ={
     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qkwfa%40chat-e34cc.iam.gserviceaccount.com",
     "universe_domain": "googleapis.com"
   }
+
+
+  export function getFCMMessageJson(senderId, message, registrationToken){
+    const FCMmessage = {
+    data: {
+      // max size of 4kb
+      messageId: '123456',
+      title: senderId,
+      sender_id: senderId,
+      message: message,
+    },
+    token: registrationToken
+  };
+  return FCMmessage
+  }
