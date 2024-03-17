@@ -10,8 +10,11 @@ export var FIRESTORE_REGISTRATION_TOKEN = "registrationToken";
 export var FCM_TOKEN = "token";
 export var FCM_SENDER_ID = "sender_id";
 export var FCM_SEND_TO_ID = "sendto_id";
+export var WS_GROUP_ID = "group_id";
 export var FCM_TITLE = "title";
 export var FCM_MESSAGE = "message";
+export var WS_NEW_GROUP_MESSAGE = "New_Group_Message";
+export var Collection_Group = "groups";
 
 export var serviceAccountKey ={
     "type": "service_account",
