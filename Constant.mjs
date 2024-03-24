@@ -15,6 +15,7 @@ export var FCM_TITLE = "title";
 export var FCM_MESSAGE = "message";
 export var WS_NEW_GROUP_MESSAGE = "New_Group_Message";
 export var Collection_Group = "groups";
+export var Document_Group_Members = "members";
 
 export var serviceAccountKey ={
     "type": "service_account",
