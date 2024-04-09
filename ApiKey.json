@@ -1,24 +1,4 @@
-export var New_Connection = "New_Connection";
-export var New_Message = "New_Message";
-export var Collection_name = "users";
-export var WS_SENDER_ID = "sender_id";
-export var WS_SEND_TO_ID = "sendto_id";
-export var MESSAGES = "messages";
-export var WS_MESSAGE = "message";
-export var WS_TYPE = "type";
-export var FIRESTORE_REGISTRATION_TOKEN = "registrationToken";  
-export var FCM_TOKEN = "token";
-export var FCM_SENDER_ID = "sender_id";
-export var FCM_SEND_TO_ID = "sendto_id";
-export var WS_GROUP_ID = "group_id";
-export var FCM_TITLE = "title";
-export var FCM_MESSAGE = "message";
-export var WS_NEW_GROUP_MESSAGE = "New_Group_Message";
-export var Collection_Group = "groups";
-export var Collection_Channel = "channels";
-export var Document_Group_Members = "members";
-
-export var serviceAccountKey ={
+{
     "type": "service_account",
     "project_id": "chat-e34cc",
     "private_key_id": "af5c112afd65d8be6b4ff446db16da138999e608",
@@ -30,19 +10,4 @@ export var serviceAccountKey ={
     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qkwfa%40chat-e34cc.iam.gserviceaccount.com",
     "universe_domain": "googleapis.com"
-  }
-
-
-  export function getFCMMessageJson(senderId, message, registrationToken){
-    const FCMmessage = {
-    data: {
-      // max size of 4kb
-      messageId: '123456',
-      title: senderId,
-      sender_id: senderId,
-      message: message,
-    },
-    token: registrationToken
-  };
-  return FCMmessage
   }
