@@ -33,16 +33,3 @@ export var serviceAccountKey ={
   }
 
 
-  export function getFCMMessageJson(senderId, message, registrationToken){
-    const FCMmessage = {
-    data: {
-      // max size of 4kb
-      messageId: '123456',
-      title: senderId,
-      sender_id: senderId,
-      message: message,
-    },
-    token: registrationToken
-  };
-  return FCMmessage
-  }
